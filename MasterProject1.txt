@@ -1,0 +1,14 @@
+n = int(input())
+d = {}
+e = {}
+b = input().split(' ')
+d = d.fromkeys(b[1:], b[0])
+b = []
+for _ in range(n - 1):
+    b = input().split(' ')
+    e = e.fromkeys(b[1:], b[0])
+    d.update(e)
+m = int(input())
+for _ in range(m):
+    c = input()
+    print(d[c])
